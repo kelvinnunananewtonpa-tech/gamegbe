@@ -53,12 +53,15 @@
 
     
 
-.logo-containter {
-   display:flex
-   justify-content:center;
-   align-items:flex-start;
-   height: 150vh;
-   padding-top: 20px;
+.logo-containter {ition: fixed;       /* stays at top even when scrolling */
+      top: 10px;             /* distance from top of page */
+      left: 50%;             /* center horizontally */
+      transform: translateX(-50%);
+      text-align: center;    /* center contents inside the box */
+      width: 250px;          /* width of the container */
+      padding: 10px;         /* optional space around logo */
+      background: transparent; /* can change to a color if you want */
+      z-index: 999; 
    }
 
 .logo 
@@ -149,4 +152,5 @@
 </body>
 
 </html>s
+
 
